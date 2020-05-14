@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>МАГДАР</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="styles.css"></head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/1.17.2/simplelightbox.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/1.17.2/simple-lightbox.min.js"></script>
+	<script src="https://kit.fontawesome.com/63c9c2b70c.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+	<header id="header">
+		<nav>
+		    <ul class="menu">
+		        <li class="logo"><img src="assets/logo.jpg" alt="logo" /><a href="#">МАГДАР</a></li>
+		        <li class="item"><a href="#about_system" data-scroll>О системе</a></li>
+		        <li class="item"><a href="#docs" data-scroll>Патенты</a></li>
+		        <li class="item"><a href="#reviews" data-scroll>Отзывы</a></li>
+		        <li class="item"><a href="#contacts" data-scroll>Контакты</a></li>
+		        </li>
+		        <li class="item button"><a href="#make_order">ОФОРМИТЬ ЗАКАЗ</a>
+		        </li>
+		        <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+		    </ul>
+		</nav>
+	</header>
+
+	<div class="content">
+		<section class="docs" id="docs">
+		  <h2>ПАТЕНТЫ</h2>
+	      <div class="gallery">
+	        <a href="assets/patent2000.jpg" class="big"
+	          ><img src="assets/patent2000.jpg" alt=""
+	        /></a>
+	        <a href="assets/patent2001.jpg" class="big"
+	          ><img src="assets/patent2001.jpg" alt=""
+	        /></a>
+	      </div>
+	    </section>
+
+	    <section class="reviews" id="reviews">
+		  <h2>ОТЗЫВЫ</h2>
+	      <div class="gallery">
+	        <a href="assets/review1.jpg" class="big"
+	          ><img src="assets/review1.jpg" alt=""
+	        /></a>
+	      </div>
+	    </section>
+
+	    <div class="contact-form" id="contacts">
+	      <form>
+	      	<input type="text" name="name" placeholder="Имя" required>
+	        <input type="email" name="mail" placeholder="E-mail" required>
+	        <input type="tel" name="phone" placeholder="+38 (___) ___-__-__" required id="phone">
+	        <div class="textarea-positioning">
+	        	<textarea name="textarea" rows="10" cols="20" placeholder="Что нам стоит знать?" value=""></textarea>
+	        </div>
+	        <input type="submit" value="СВЯЗАТЬСЯ С НАМИ">
+	      </form>
+    	</div>
+
+    	<div id="make_order" class="overlay">
+			<div class="popup">
+				<a class="close" href="#">&times;</a>
+				<div class="make_order">
+					<form>
+				      	<input type="text" name="name" placeholder="Имя" required>
+				        <input type="email" name="mail" placeholder="E-mail" required>
+				        <input type="tel" name="phone" placeholder="+38 (___) ___-__-__" required id="phone">
+				        <div class="textarea-positioning">
+				        	<textarea name="textarea" rows="10" cols="20" placeholder="Что нам стоит знать?" value=""></textarea>
+				        </div>
+				        <input type="submit" value="ОФОРМИТЬ ЗАКАЗ">
+			      </form>
+				</div>
+			</div>
+		</div>
+	    
+	</div>
+
+    <footer class="footer">
+    	<div class="container">
+			<div class="logo">
+				<h3 class="logo_title">(c) ТОВ "МАГДАР"</h3>
+			</div>
+			<i class="far fa-phone"> <a href="tel:+380664234039">+38 (066) 42 34 039</a></i>
+			<i class="far fa-envelope"> <a href="mailto:info.magdar@gmail.com">info.magdar@gmail.com</a></i>
+			<i class="far fa-calendar"> <span>10:00 - 18:00</span></i>
+		</div>
+    </footer>
+	<!--
+	<div class="container">
+		<div class="form_card">
+			<form>
+				<h2>СВЯЗАТЬСЯ С НАМИ</h2>
+				<div class="input_box">
+					<input type="text" name="" required="required">
+					<span>Имя</span>
+				</div>
+				<div class="input_box">
+					<input type="tel" name="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="required" id="phone">
+					<span>Телефон</span>
+				</div>
+				<div class="input_box">
+					<input type="email" name="" required="required">
+					<span>E-mail</span>
+				</div>
+				<div class="input_box">
+					<textarea required="required"></textarea>
+					<span>Что нам стоит знать?</span>
+				</div>
+				<div class="input_box">
+					<input type="submit" value="ОТПРАВИТЬ" name="">
+				</div>
+			</form>
+		</div>
+	</div>
+	-->
+	<!--
+		<header>
+		<nav class="navbar">
+			<div >
+				<img src="assets/logo.jpg" class="nav_logo" alt="logo" />
+				<h1 class="nav_logo_title">МАГДАР</h1>
+
+				<a href="tel:+380664234039">+38 066 42 34 039</a>
+				<button>ОФОРМИТЬ ЗАКАЗ</button>
+			</div>
+		</nav>
+		<div class="background">
+			<img src="assets/background.jpg" />
+		</div>
+	</header>
+	<div class="make_order"></div>
+	<div class="about_system">
+		<p>
+			Технология ХХІ века по обработке полей и хранилищ с помощью аэрозольного генератора МАГДАР.
+			Система МАГДАР - это механическо-термический аэрозольный генератор для автономных работ, обеспечивающий получения высоко дисперсионного аэрозольного облака из растворов пестицидов в водных и органических растворителях, которые являются носителями пестицидов от места образования тумана до обрабатываемой растительности на большие расстояния.
+			Работы аэрозольным генератором производятся в поздневечерние и ночные часы, что позволяет увеличить время токсичного действия пестицидов, особенно перитроидной группы на вредные организмы.
+			Пестицидный туман, обладая высокой дисперсностью и способностью распространяться, обволакивает обрабатываемые объекты, хорошо проникая и равномерно распределяя в них.
+			Увеличения активной поверхности обуславливает дополнительное усиление токсического действия. Одна установка МАГДАР обладая высокой производительностью (1000-1500 га/сутки) выполняет работу, которая под силу 10-15 обычным опрыскивателям или 2-3 самолетам.
+			Эффективность обработки полей аэрозольным генератором достигает 95-98%, а при обработке хранилища достигает 100%. Широкая полоса захвата (от 70 до 500 м) снижает площадь заминания посевов до 0,03-0,06% от обрабатываемой площади, что в 50 раз меньше, чем после обработки наземным опрыскивателем.
+		</p>
+		Доп. информация:
+		<ul>
+			<li>Емкость баков для рабочей жидкости - 2*500 л.</li>
+			<li>Количество заправок за ночь: 1-2 раза.</li>
+			<li>Скорость движения агрегата: 100-200 м/мин.</li>
+		</ul>
+
+	</div>
+	<div class="system_efficiency">
+		<p>
+			Применения аэрозольного генератора МАГДАР. гарантирует высокую эффективность и снижает общие затраты при химической обработке растений в 1,5 - 2 раза.
+		</p>
+		Производительность аэрозольного генератора при обработке полей в течении одной ночи составляет:
+		<ul>
+			<li>Гербицидами 400-500 га, при ширине захвата за 1 гон 7-100 м, расход жидкости 2-20 л/га;</li>
+			<li>Фунгицидами 600-700 га, при ширине захвата за 1 гон 100-150 м, расход жидкости 0,7-15 л/га;</li>
+			<li>Инсектицидами 800-1500 га, при ширине захвата за 1 гон 450-500 м, расход жидкости 0,5-10 л/га;</li>
+			<li>При обработке хранилищ скорость обработки достигает 300 м³/мин.</li>
+		</ul>
+
+		Выгода:
+		<ul>
+			<li>Снижение расходов дизтоплива в 3,5 до 8 раз;</li>
+			<li>Снижение расходов пестицидов на 20-50% по сравнению с нормой;</li>
+			<li>Уменьшение расхода рабочей жидкости в 50-150 раз;</li>
+			<li>Снижение энергозатрат, трудозатрат, безопасность работ и т.д.;</li>
+			<li>Повышение урожая, опрыскиванием озимых посевов зерновых культур для внекорневой подкормкой на 25-30%.</li>
+		</ul>
+		<img src="assets/system_prev.jpg" alt="system_prev" />
+		<img src="assets/logo.jpg" alt="system_prev" />
+	</div>
+	<div class="contact_us">
+		
+	</div>
+	<div class="reviews">
+		
+	</div>
+	<div class="table">
+		
+	</div>
+	<footer>
+		<div class="container">
+			<img src="assets/logo.jpg" class="footer_logo" alt="logo" />
+			<h3 class="footer_logo_title">МАГДАР</h3>
+			<div class="footer_contacts">
+				Контакты
+				<ul>
+					<li>Телефон: <a href="tel:+380664234039">+(066) 42 34 039</a></li>
+					<li>E-mail: <a href="mailto:info.magdar@gmail.com">info.magdar@gmail.com</a></li>
+					<li>Адрес: </li>
+					<li>График работы: </li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	--> 
+</body>
+</html>
