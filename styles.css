@@ -53,6 +53,24 @@ nav .logo a:hover {
     text-decoration: none;
 }
 
+.arrow {
+	color: #50cc56;
+}
+
+#topBtn {
+  display: none;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  padding: 15px;
+  font-size: 32px;
+}
+
 .menu {
     display: flex;
     flex-wrap: wrap;

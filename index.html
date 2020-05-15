@@ -33,6 +33,8 @@
 		</nav>
 	</header>
 
+	<button onclick="topFunction()" id="topBtn" title="Вверх"><i class="fas fa-arrow-up arrow"></i></button>
+
 	<div class="content">
 		<section class="docs" id="docs">
 		  <h2>ПАТЕНТЫ</h2>
@@ -54,12 +56,12 @@
 	        /></a>
 	      </div>
 	    </section>
-
+	    <iframe name="fake" id="fake" style="display: none;"></iframe>
 	    <div class="contact-form" id="contacts">
-	      <form>
+	      <form action="https://us-central1-magdar-c730f.cloudfunctions.net/sendContactUs" method="post">
 	      	<input type="text" name="name" placeholder="Имя" required>
-	        <input type="email" name="mail" placeholder="E-mail" required>
-	        <input type="tel" name="phone" placeholder="+38 (___) ___-__-__" required id="phone">
+	        <input type="email" name="email" placeholder="E-mail" required>
+	        <input type="tel" name="phone" placeholder="+38 (___) ___-__-__" id="phone">
 	        <div class="textarea-positioning">
 	        	<textarea name="textarea" rows="10" cols="20" placeholder="Что нам стоит знать?" value=""></textarea>
 	        </div>
@@ -71,10 +73,10 @@
 			<div class="popup">
 				<a class="close" href="#">&times;</a>
 				<div class="make_order">
-					<form>
+					<form action="https://us-central1-magdar-c730f.cloudfunctions.net/sendMakeOrder" method="post">
 				      	<input type="text" name="name" placeholder="Имя" required>
-				        <input type="email" name="mail" placeholder="E-mail" required>
-				        <input type="tel" name="phone" placeholder="+38 (___) ___-__-__" required id="phone">
+				        <input type="email" name="email" placeholder="E-mail" required>
+				        <input type="tel" name="phone" placeholder="+38 (___) ___-__-__" id="phone">
 				        <div class="textarea-positioning">
 				        	<textarea name="textarea" rows="10" cols="20" placeholder="Что нам стоит знать?" value=""></textarea>
 				        </div>
@@ -97,49 +99,6 @@
 		</div>
     </footer>
 	<!--
-	<div class="container">
-		<div class="form_card">
-			<form>
-				<h2>СВЯЗАТЬСЯ С НАМИ</h2>
-				<div class="input_box">
-					<input type="text" name="" required="required">
-					<span>Имя</span>
-				</div>
-				<div class="input_box">
-					<input type="tel" name="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="required" id="phone">
-					<span>Телефон</span>
-				</div>
-				<div class="input_box">
-					<input type="email" name="" required="required">
-					<span>E-mail</span>
-				</div>
-				<div class="input_box">
-					<textarea required="required"></textarea>
-					<span>Что нам стоит знать?</span>
-				</div>
-				<div class="input_box">
-					<input type="submit" value="ОТПРАВИТЬ" name="">
-				</div>
-			</form>
-		</div>
-	</div>
-	-->
-	<!--
-		<header>
-		<nav class="navbar">
-			<div >
-				<img src="assets/logo.jpg" class="nav_logo" alt="logo" />
-				<h1 class="nav_logo_title">МАГДАР</h1>
-
-				<a href="tel:+380664234039">+38 066 42 34 039</a>
-				<button>ОФОРМИТЬ ЗАКАЗ</button>
-			</div>
-		</nav>
-		<div class="background">
-			<img src="assets/background.jpg" />
-		</div>
-	</header>
-	<div class="make_order"></div>
 	<div class="about_system">
 		<p>
 			Технология ХХІ века по обработке полей и хранилищ с помощью аэрозольного генератора МАГДАР.
@@ -180,30 +139,8 @@
 		<img src="assets/system_prev.jpg" alt="system_prev" />
 		<img src="assets/logo.jpg" alt="system_prev" />
 	</div>
-	<div class="contact_us">
-		
-	</div>
-	<div class="reviews">
-		
-	</div>
 	<div class="table">
 		
-	</div>
-	<footer>
-		<div class="container">
-			<img src="assets/logo.jpg" class="footer_logo" alt="logo" />
-			<h3 class="footer_logo_title">МАГДАР</h3>
-			<div class="footer_contacts">
-				Контакты
-				<ul>
-					<li>Телефон: <a href="tel:+380664234039">+(066) 42 34 039</a></li>
-					<li>E-mail: <a href="mailto:info.magdar@gmail.com">info.magdar@gmail.com</a></li>
-					<li>Адрес: </li>
-					<li>График работы: </li>
-				</ul>
-			</div>
-		</div>
-	</footer>
 	--> 
 </body>
 </html>
