@@ -4,7 +4,16 @@ var scroll = new SmoothScroll('[data-scroll]', {
 });
 
 $(function() {
-  // const $gallery = $('.gallery a').simpleLightbox();
+  const $gallery = $('.gallery a').simpleLightbox();
+
+});
+
+$(document).ready(function(){
+    $('.venobox').venobox({                            // default: ''                         // default: '#fff'
+    titleattr  : 'data-title',                       // default: 'title'
+    numeratio  : true,                               // default: false
+    infinigall : true,                               // default: false
+  }); 
 });
 
 $(function() {

@@ -184,6 +184,53 @@ nav .logo a,
 
 }
 
+.work_examples{
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+    list-style-type: none;
+}
+
+.video {
+  font-size: 32px;
+  margin: 32px;
+  width: 270px;
+  height: 202px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.video i, h6 {
+  color: #fff;
+}
+
+.video h6 {
+  text-align: center;
+  padding-top: 24px;
+}
+
+.video i {
+  padding-top: 56px;
+
+}
+
+.video_prev {
+  width: 50%;
+  height: 50%;
+}
+
 .docs {
 	text-align: center;
 	margin: 32px auto 32px auto;
@@ -496,3 +543,5 @@ footer .contacts {
   max-height: 30%;
   overflow: auto;
 }
+
+
