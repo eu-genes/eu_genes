@@ -239,6 +239,13 @@ nav .logo a,
 
 .docs .gallery {
 	display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.docs .gallery .big {
+  flex: 1;
 }
 
 .docs .gallery img,

@@ -87,7 +87,7 @@
 
 	    <iframe name="fake" id="fake" style="display: none;"></iframe>
 	    <div class="contact-form" id="contacts">
-	      <form id="contacts_form" action="https://us-central1-magdar-c730f.cloudfunctions.net/sendContactUs" method="post" target="fake">
+	      <form id="contacts_form" method="post" target="fake">
 	      	<input type="text" name="name" placeholder="Имя" required>
 	        <input type="email" name="email" placeholder="E-mail" required>
 	        <input type="tel" name="phone" placeholder="+38 (___) ___-__-__" id="phone">
@@ -102,7 +102,7 @@
 			<div class="popup">
 				<a id="close" class="close" href="#">&times;</a>
 				<div class="make_order">
-					<form id="order_form" action="https://us-central1-magdar-c730f.cloudfunctions.net/sendMakeOrder" method="post"target="fake">
+					<form id="order_form" method="post" target="fake">
 				      	<input type="text" name="name" placeholder="Имя" required>
 				        <input type="email" name="email" placeholder="E-mail" required>
 				        <input type="tel" name="phone" placeholder="+38 (___) ___-__-__" id="phone">

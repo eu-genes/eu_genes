@@ -28,15 +28,29 @@ $(function() {
     });
 
     $("#order_form").submit(function( event ) {
-      event.preventDefault();
-      $("#order_form").trigger("reset");
-      var href = $('#close').attr('href');
-      window.location.href = href;
+      var _data = $(this).serialize();
+      $.ajax({
+        type: "POST",
+        url: "https://us-central1-magdar-c730f.cloudfunctions.net/sendMakeOrder",
+        data: _data,
+        complete: function(data){
+          $("#order_form").trigger("reset");
+          var href = $('#close').attr('href');
+          window.location.href = href;
+        },
+      });
     });
 
     $("#contacts_form").submit(function( event ) {
-      event.preventDefault();
-      $("#contacts_form").trigger("reset");
+      var _data = $(this).serialize();
+      $.ajax({
+        type: "POST",
+        url: "https://us-central1-magdar-c730f.cloudfunctions.net/sendContactUs",
+        data: _data,
+        complete: function(data){
+          $("#contacts_form").trigger("reset");
+        },
+      });
     });
 });
 
