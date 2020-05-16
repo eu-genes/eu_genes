@@ -4,7 +4,7 @@ var scroll = new SmoothScroll('[data-scroll]', {
 });
 
 $(function() {
-  const $gallery = $('.gallery a').simpleLightbox();
+  // const $gallery = $('.gallery a').simpleLightbox();
 });
 
 $(function() {
@@ -16,6 +16,18 @@ $(function() {
             $(".item").addClass("active");
             $(this).find("a").html("<i class='fas fa-times'></i>");
         }
+    });
+
+    $("#order_form").submit(function( event ) {
+      event.preventDefault();
+      $("#order_form").trigger("reset");
+      var href = $('#close').attr('href');
+      window.location.href = href;
+    });
+
+    $("#contacts_form").submit(function( event ) {
+      event.preventDefault();
+      $("#contacts_form").trigger("reset");
     });
 });
 

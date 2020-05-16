@@ -9,11 +9,14 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="styles.css"></head>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/1.17.2/simplelightbox.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.7.0/css/lightgallery.min.css">
+	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/1.17.2/simple-lightbox.min.js"></script>
 	<script src="https://kit.fontawesome.com/63c9c2b70c.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.7.0/js/lightgallery.min.js"></script>
+    
     <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
@@ -36,6 +39,7 @@
 	<button onclick="topFunction()" id="topBtn" title="Вверх"><i class="fas fa-arrow-up arrow"></i></button>
 
 	<div class="content">
+
 		<section class="docs" id="docs">
 		  <h2>ПАТЕНТЫ</h2>
 	      <div class="gallery">
@@ -56,9 +60,12 @@
 	        /></a>
 	      </div>
 	    </section>
+
+		<!--
+		-->
 	    <iframe name="fake" id="fake" style="display: none;"></iframe>
 	    <div class="contact-form" id="contacts">
-	      <form action="https://us-central1-magdar-c730f.cloudfunctions.net/sendContactUs" method="post" target="fake">
+	      <form id="contacts_form" action="https://us-central1-magdar-c730f.cloudfunctions.net/sendContactUs" method="post" target="fake">
 	      	<input type="text" name="name" placeholder="Имя" required>
 	        <input type="email" name="email" placeholder="E-mail" required>
 	        <input type="tel" name="phone" placeholder="+38 (___) ___-__-__" id="phone">
@@ -71,9 +78,9 @@
 
     	<div id="make_order" class="overlay">
 			<div class="popup">
-				<a class="close" href="#">&times;</a>
+				<a id="close" class="close" href="#">&times;</a>
 				<div class="make_order">
-					<form action="https://us-central1-magdar-c730f.cloudfunctions.net/sendMakeOrder" method="post" target="fake">
+					<form id="order_form" action="https://us-central1-magdar-c730f.cloudfunctions.net/sendMakeOrder" method="post"target="fake">
 				      	<input type="text" name="name" placeholder="Имя" required>
 				        <input type="email" name="email" placeholder="E-mail" required>
 				        <input type="tel" name="phone" placeholder="+38 (___) ___-__-__" id="phone">
@@ -88,15 +95,30 @@
 	    
 	</div>
 
-    <footer class="footer">
-    	<div class="container">
-			<div class="logo">
-				<h3 class="logo_title">(c) ТОВ "МАГДАР"</h3>
-			</div>
-			<i class="far fa-phone"> <a href="tel:+380664234039">+38 (066) 42 34 039</a></i>
-			<i class="far fa-envelope"> <a href="mailto:info.magdar@gmail.com">info.magdar@gmail.com</a></i>
-			<i class="far fa-calendar"> <span>10:00 - 18:00</span></i>
-		</div>
+    <footer>
+    	<h3 class="logo">(c) ТОВ "МАГДАР"</h3>
+		<section class="social">
+			<ul>
+				<li>
+					<a target="_blank" href="https://www.youtube.com/channel/UC0fiQ1vGpW-fZETEejj5C2Q">
+						<i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://www.instagram.com/info_magdar/">
+						<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+		</section>
+
+		<section class="contacts">
+			<ul>
+				<li><i class="fa fa-phone"> <a href="tel:+380664234039">+38 (066) 42 34 039</a></i></li>
+				<li><i class="fa fa-envelope"> <a href="mailto:info.magdar@gmail.com">info.magdar@gmail.com</a></i></li>
+				<li><i class="far fa-calendar"> <span>10:00 - 18:00</span></i></li>
+			</ul>
+		</section>
     </footer>
 	<!--
 	<div class="about_system">
