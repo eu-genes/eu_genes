@@ -566,6 +566,10 @@ footer .contacts li {
   margin: 0 auto;
 }
 
+.contact-form .textarea-positioning {
+  width: 350px;
+}
+
 .popup .make_order input[type=email],
 .popup .make_order input[type=tel],
 .popup .make_order input[type=text],
@@ -603,6 +607,12 @@ footer .contacts li {
   box-sizing: border-box;
 }
 
+.contact-form input[type=email],
+.contact-form input[type=tel],
+.contact-form input[type=text] {
+  width: 350px;
+}
+
 .popup .make_order input[type=submit],
 .contact-form input[type=submit] {
   height: 53px;
@@ -616,6 +626,10 @@ footer .contacts li {
   text-transform: uppercase;
   background-color: #50cc56;
   cursor: pointer;
+}
+
+.contact-form input[type=submit] {
+  width: 350px;
 }
 
 .popup .make_order input[type=submit]:hover,
