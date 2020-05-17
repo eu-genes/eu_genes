@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
 
 * {
 	margin: 0;
@@ -13,7 +14,9 @@ body {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background: #e8f5e9;
+	/*background: #e8f5e9;*/
+  background: #fff;
+
 	color: #444444;
 }
 
@@ -193,7 +196,7 @@ nav .logo a,
   background: url(assets/background.jpg) center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   color: #fff;
 }
@@ -235,6 +238,11 @@ nav .logo a,
 
 }
 
+.main button  a{
+  color: #fff;
+  text-decoration: none;
+}
+
 .main .text {
   position: relative;
   z-index: 3;
@@ -244,7 +252,7 @@ nav .logo a,
 }
 
 .work_examples{
-  margin-top: 96px;
+  margin-top: 72px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -273,6 +281,7 @@ nav .logo a,
 
 .video i, h6 {
   color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .video h6 {
@@ -288,6 +297,50 @@ nav .logo a,
 .video_prev {
   width: 50%;
   height: 50%;
+}
+
+.about_system {
+  font-size: 20px;
+  color: #5e5e5e;
+  padding: 32px 16px 32px 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.5;
+}
+
+.about_system p {
+  padding: 16px;
+  text-align: justify;
+  text-indent: 32px;
+
+}
+
+.sub_about {
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub_about img {
+  margin-left: 8px;
+  width: 480px;
+  height: 360px;
+  float: left;
+}
+
+.sub_about p {
+
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details img {
+  margin-left: 64px;
+  width: 480px;
+  height: 360px;
+  float: left;
 }
 
 .docs {
@@ -449,30 +502,6 @@ footer .contacts ul{
 footer .contacts li {
   padding: 4px 0px 4px 0px;
 }
-
-/*
-footer h3 {
-  order: 0;
-  flex: 1;
-}
-
-footer .contacts i {
-  font-size: 18px;
-}
-
-footer .social {
-  display: flex;
-  order: 1;
-}
-
-footer .contacts {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  order: 2;
-}
-*/
 
 .popup .make_order form{
 	/*margin-top: 48px;*/
