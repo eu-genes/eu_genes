@@ -224,7 +224,7 @@ nav .logo a,
 }
 
 .main button {
-  margin-top: 56px;
+  margin: 56px 32px 0px 32px;
   font-size: 18px;
   font-weight: bold;
   font-family: 'Source Sans Pro', sans-serif;
@@ -328,7 +328,7 @@ nav .logo a,
 }
 
 .sub_about p {
-
+  align-self: center;
 }
 
 .details {
@@ -337,10 +337,41 @@ nav .logo a,
 }
 
 .details img {
-  margin-left: 64px;
+  margin-left: 24px;
   width: 480px;
   height: 360px;
-  float: left;
+}
+
+.details .details_list {
+  padding-left: 56px;
+  flex: 1;
+  align-self: center;
+  font-size: 24px;
+  color: #5e5e5e;
+  padding: 32px 16px 32px 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.details .details_list ul {
+  list-style-type: none;
+}
+
+.details .details_list li {
+  padding: 16px;
+}
+
+.details .details_list li span{
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.system_efficiency {
+  margin-top: 48px;
+}
+
+.system_efficiency h2 {
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .docs {
