@@ -376,6 +376,63 @@ nav .logo a,
   text-align: center;
 }
 
+.system_efficiency .imgs {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.system_efficiency .imgs img {
+  width: 450px;
+}
+
+.system_efficiency  ul {
+  text-align: center;
+  font-size: 24px;
+  text-align: justify;
+  text-indent: 32px;
+  color: #5e5e5e;
+  line-height: 1.5;
+  list-style-type: none;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.system_efficiency .table {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  font-size: 24px;
+  color: #5e5e5e;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.system_efficiency ul {
+  text-align: justify;
+  padding-top: 24px;
+}
+
+.system_efficiency ul li {
+  padding: 8px
+}
+
+.table ul {
+  align-self: center;
+  padding: 32px 0px 32px 0px;
+}
+
+.table li {
+  padding: 8px 8px;
+}
+
+.table img {
+  width: 640px;
+  height: 480px;
+}
+
 .docs {
 	text-align: center;
 	margin: 32px auto 32px auto;
@@ -520,6 +577,10 @@ footer .social {
 
 footer .contacts {
   order: 2;
+}
+
+footer .contacts i {
+  color: #fff;
 }
 
 footer .social ul{
